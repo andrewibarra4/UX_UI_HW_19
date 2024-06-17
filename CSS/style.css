@@ -1,0 +1,160 @@
+.navigation {
+  height: 10%;
+  background-color: #373738;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+}
+
+li.inline-block {
+  margin-left: 3%;
+}
+
+.logo {
+  width: 40px;
+  margin-top: 40%;
+  margin-left: 40%;
+}
+
+nav {
+  width: 90%;
+  padding: 1%;
+}
+
+ul {
+  width: 95%;
+}
+
+ul.topbar {
+  text-align: right;
+}
+
+.logo {
+  text-align: center;
+}
+
+section.heroImg {
+  text-align: center;
+  align-content: center;
+  height: 600px;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #373738;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.myself {
+  padding-top: 10%;
+  height: 200px;
+}
+
+.footer {
+  padding-left: 0;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexContainer div {
+  width: 33%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.mySkills {
+  text-align: center;
+}
+
+.myWork {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.workGrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+    "imageArea1 bodyArea1"
+    "imageArea2 bodyArea2 "
+    "imageArea3 bodyArea3 ";
+  padding-bottom: 2%;
+}
+
+.workGrid div {
+  padding-bottom: 3%;
+}
+
+.flexContainer img {
+  height: 100px;
+}
+
+.gridImage1 {
+  grid-area: imageArea1;
+}
+
+.gridBody1 {
+  grid-area: bodyArea1;
+}
+
+.gridImage2 {
+  grid-area: imageArea2;
+}
+
+.gridBody2 {
+  grid-area: bodyArea2;
+}
+
+.gridImage3 {
+  grid-area: imageArea3;
+}
+
+.gridBody3 {
+  grid-area: bodyArea3;
+}
+
+.workBody {
+  text-align: left;
+  padding-left: 7%;
+}
+
+.workImage {
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .myWork {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .workGrid {
+    flex-direction: colum;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    grid-template-areas:
+      "imageArea1"
+      "bodyArea1"
+      "imageArea2"
+      "bodyArea2"
+      "imageArea3"
+      "bodyArea3";
+  }
+}
