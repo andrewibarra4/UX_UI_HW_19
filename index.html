@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset=“UTF-8”>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="“UTF-8”" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="CSS/style.css" />
     <title></title>
   </head>
@@ -143,4 +143,22 @@
       </ul>
     </footer>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(".myself").hover(function () {
+      $(this).fadeOut(500);
+      $(this).fadeIn(500);
+    });
+    $(".content P").on("click", function () {
+      $(this).css("color", "blue");
+    });
+    $(".flexContainer P").hover(function(){
+      $(this).fadeOut(500);
+      $(this).fadeIn(500);
+    })
+    $("H4").on("click", function () {
+      $(this).css("fontSize", "30px");
+    });
+  </script>
+  <script src="js/index.js"></script>
 </html>
